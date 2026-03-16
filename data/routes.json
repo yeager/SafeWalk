@@ -1,0 +1,43 @@
+{
+  "routes": [
+    {
+      "name": "Hem till jobbet",
+      "steps": [
+        {"lat": 59.3293, "lon": 18.0686, "name": "Hem (Kungsgatan 1)"},
+        {"lat": 59.3310, "lon": 18.0700, "name": "Hötorget"},
+        {"lat": 59.3325, "lon": 18.0650, "name": "Drottninggatan / Kungsgatan"},
+        {"lat": 59.3340, "lon": 18.0630, "name": "Jobbet (Sveavägen 10)"}
+      ],
+      "estimated_minutes": 12
+    },
+    {
+      "name": "Kvällspromenad i parken",
+      "steps": [
+        {"lat": 59.3420, "lon": 18.0950, "name": "Parkingången"},
+        {"lat": 59.3435, "lon": 18.0970, "name": "Fontänen"},
+        {"lat": 59.3445, "lon": 18.0940, "name": "Lekplatsen"},
+        {"lat": 59.3420, "lon": 18.0950, "name": "Tillbaka till ingången"}
+      ],
+      "estimated_minutes": 20
+    },
+    {
+      "name": "Till mataffären",
+      "steps": [
+        {"lat": 59.3293, "lon": 18.0686, "name": "Hem"},
+        {"lat": 59.3280, "lon": 18.0710, "name": "Korsningen Birger Jarlsgatan"},
+        {"lat": 59.3270, "lon": 18.0730, "name": "ICA Supermarket"}
+      ],
+      "estimated_minutes": 8
+    }
+  ],
+  "contacts": [
+    {
+      "name": "Mamma",
+      "phone": "+46701234567"
+    },
+    {
+      "name": "Partner",
+      "phone": "+46709876543"
+    }
+  ]
+}
