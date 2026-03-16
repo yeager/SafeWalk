@@ -80,7 +80,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         title.add_css_class("title-1")
         page.append(title)
 
-        subtitle = Gtk.Label(label=_("Kom hem tryggt")
+        subtitle = Gtk.Label(label=_("Get home safely")
         subtitle.add_css_class("dim-label")
         page.append(subtitle)
 
