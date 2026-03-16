@@ -1,0 +1,66 @@
+# Swedish translation
+# Copyright (C) 2024
+# This file is distributed under the same license as the package.
+#
+msgid ""
+msgstr ""
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid ""
+msgstr ""
+
+msgid "Avbryt promenad"
+msgstr "Cancel promenad"
+
+msgid "Dela min position"
+msgstr "Dela min position"
+
+msgid "Dessa personer kan se din position under promenader."
+msgstr "Dessa personer kan se din position under promenader."
+
+msgid "Jag är framme!"
+msgstr "Jag är framme!"
+
+msgid "Kom hem tryggt"
+msgstr "Kom hem tryggt"
+
+msgid "Lägg till"
+msgstr "Add"
+
+msgid "Lägg till kontakt"
+msgstr "Add kontakt"
+
+msgid "Namn"
+msgstr "Name"
+
+msgid "Position"
+msgstr "Position"
+
+msgid "Promenad pågår"
+msgstr "Promenad pågår"
+
+msgid "SafeWalk"
+msgstr "SafeWalk"
+
+msgid "Simulerar position..."
+msgstr "Simulerar position..."
+
+msgid "Sparade rutter"
+msgstr "Sparade rutter"
+
+msgid "Starta"
+msgstr "Start"
+
+msgid "Telefonnummer"
+msgstr "Telefonnummer"
+
+msgid "Trygga kontakter"
+msgstr "Trygga kontakter"
+
+msgid "Välj en rutt för att börja"
+msgstr "Select en rutt för att börja"
+

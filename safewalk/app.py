@@ -85,7 +85,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(subtitle)
 
         # Status
-        self.status_label = Gtk.Label(label=_("Välj en rutt för att börja")
+        self.status_label = Gtk.Label(label=_("Select en rutt för att börja")
         self.status_label.set_wrap(True)
         self.status_label.set_margin_top(10)
         page.append(self.status_label)
@@ -105,7 +105,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
             row.set_title(route["name"])
             row.set_subtitle(f"Ca {route['estimated_minutes']} min · {len(route['steps'])} stopp")
 
-            btn = Gtk.Button(label=_("Starta")
+            btn = Gtk.Button(label=_("Start")
             btn.add_css_class("suggested-action")
             btn.set_valign(Gtk.Align.CENTER)
             btn.connect("clicked", self._on_start_walk, i)
@@ -186,7 +186,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         btn_box.append(self.arrived_btn)
 
         # SOS / Avbryt
-        cancel_btn = Gtk.Button(label=_("Avbryt promenad")
+        cancel_btn = Gtk.Button(label=_("Cancel promenad")
         cancel_btn.add_css_class("destructive-action")
         cancel_btn.connect("clicked", self._on_cancel_walk)
         btn_box.append(cancel_btn)
@@ -220,7 +220,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         self._refresh_contacts()
 
         # Lägg till kontakt
-        add_frame = Gtk.Frame(label=_("Lägg till kontakt")
+        add_frame = Gtk.Frame(label=_("Add kontakt")
         add_frame.set_margin_top(10)
         page.append(add_frame)
 
@@ -232,14 +232,14 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         add_frame.set_child(add_box)
 
         self.name_entry = Gtk.Entry()
-        self.name_entry.set_placeholder_text(_("Namn")
+        self.name_entry.set_placeholder_text(_("Name")
         add_box.append(self.name_entry)
 
         self.phone_entry = Gtk.Entry()
         self.phone_entry.set_placeholder_text(_("Telefonnummer")
         add_box.append(self.phone_entry)
 
-        add_btn = Gtk.Button(label=_("Lägg till")
+        add_btn = Gtk.Button(label=_("Add")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add_contact)
         add_box.append(add_btn)
