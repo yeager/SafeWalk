@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: safewalk\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 19:26+0100\n"
+"POT-Creation-Date: 2026-03-16 20:00+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,7 @@ msgid "Select a route to start"
 msgstr ""
 
 #: safewalk/app.py:94
-msgid "Sparade rutter"
+msgid "Saved routes"
 msgstr ""
 
 #: safewalk/app.py:108
@@ -51,7 +51,7 @@ msgid "Simulerar position..."
 msgstr ""
 
 #: safewalk/app.py:177
-msgid "Dela min position"
+msgid "Share my position"
 msgstr ""
 
 #: safewalk/app.py:183
@@ -63,15 +63,15 @@ msgid "Cancel promenad"
 msgstr ""
 
 #: safewalk/app.py:206
-msgid "Trygga kontakter"
+msgid "Safe contacts"
 msgstr ""
 
 #: safewalk/app.py:210
-msgid "Dessa personer kan se din position under promenader."
+msgid "These people can see your position during walks."
 msgstr ""
 
 #: safewalk/app.py:223
-msgid "Add kontakt"
+msgid "Add contact"
 msgstr ""
 
 #: safewalk/app.py:235
@@ -79,7 +79,7 @@ msgid "Name"
 msgstr ""
 
 #: safewalk/app.py:239
-msgid "Telefonnummer"
+msgid "Telephone number"
 msgstr ""
 
 #: safewalk/app.py:242

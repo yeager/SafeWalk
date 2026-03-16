@@ -91,7 +91,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(self.status_label)
 
         # Ruttlista
-        route_frame = Gtk.Frame(label=_("Sparade rutter")
+        route_frame = Gtk.Frame(label=_("Saved routes")
         route_frame.set_margin_top(10)
         page.append(route_frame)
 
@@ -174,7 +174,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(btn_box)
 
         # Dela position
-        share_btn = Gtk.Button(label=_("Dela min position")
+        share_btn = Gtk.Button(label=_("Share my position")
         share_btn.add_css_class("suggested-action")
         share_btn.connect("clicked", self._on_share_position)
         btn_box.append(share_btn)
@@ -203,11 +203,11 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.set_margin_end(20)
         page.set_vexpand(True)
 
-        title = Gtk.Label(label=_("Trygga kontakter")
+        title = Gtk.Label(label=_("Safe contacts")
         title.add_css_class("title-2")
         page.append(title)
 
-        desc = Gtk.Label(label=_("Dessa personer kan se din position under promenader.")
+        desc = Gtk.Label(label=_("These people can see your position during walks.")
         desc.set_wrap(True)
         desc.add_css_class("dim-label")
         page.append(desc)
@@ -220,7 +220,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         self._refresh_contacts()
 
         # Lägg till kontakt
-        add_frame = Gtk.Frame(label=_("Add kontakt")
+        add_frame = Gtk.Frame(label=_("Add contact")
         add_frame.set_margin_top(10)
         page.append(add_frame)
 
@@ -236,7 +236,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         add_box.append(self.name_entry)
 
         self.phone_entry = Gtk.Entry()
-        self.phone_entry.set_placeholder_text(_("Telefonnummer")
+        self.phone_entry.set_placeholder_text(_("Telephone number")
         add_box.append(self.phone_entry)
 
         add_btn = Gtk.Button(label=_("Add")
