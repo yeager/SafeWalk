@@ -4,6 +4,7 @@ import json
 import os
 
 import gi
+from safewalk.i18n import _
 gi.require_version("Gtk", "4.0")
 gi.require_version("Adw", "1")
 from gi.repository import Gtk, Adw, GLib
@@ -75,22 +76,22 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.set_vexpand(True)
 
         # Titel
-        title = Gtk.Label(label="SafeWalk")
+        title = Gtk.Label(label=_("SafeWalk")
         title.add_css_class("title-1")
         page.append(title)
 
-        subtitle = Gtk.Label(label="Kom hem tryggt")
+        subtitle = Gtk.Label(label=_("Kom hem tryggt")
         subtitle.add_css_class("dim-label")
         page.append(subtitle)
 
         # Status
-        self.status_label = Gtk.Label(label="Välj en rutt för att börja")
+        self.status_label = Gtk.Label(label=_("Välj en rutt för att börja")
         self.status_label.set_wrap(True)
         self.status_label.set_margin_top(10)
         page.append(self.status_label)
 
         # Ruttlista
-        route_frame = Gtk.Frame(label="Sparade rutter")
+        route_frame = Gtk.Frame(label=_("Sparade rutter")
         route_frame.set_margin_top(10)
         page.append(route_frame)
 
@@ -104,7 +105,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
             row.set_title(route["name"])
             row.set_subtitle(f"Ca {route['estimated_minutes']} min · {len(route['steps'])} stopp")
 
-            btn = Gtk.Button(label="Starta")
+            btn = Gtk.Button(label=_("Starta")
             btn.add_css_class("suggested-action")
             btn.set_valign(Gtk.Align.CENTER)
             btn.connect("clicked", self._on_start_walk, i)
@@ -124,12 +125,12 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.set_margin_end(20)
         page.set_vexpand(True)
 
-        walk_title = Gtk.Label(label="Promenad pågår")
+        walk_title = Gtk.Label(label=_("Promenad pågår")
         walk_title.add_css_class("title-2")
         page.append(walk_title)
 
         # Ruttnamn
-        self.route_name_label = Gtk.Label(label="")
+        self.route_name_label = Gtk.Label(label=_("")
         self.route_name_label.add_css_class("title-3")
         page.append(self.route_name_label)
 
@@ -139,7 +140,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(self.progress_bar)
 
         # Aktuell position
-        pos_frame = Gtk.Frame(label="Position")
+        pos_frame = Gtk.Frame(label=_("Position")
         page.append(pos_frame)
 
         pos_box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=6)
@@ -149,11 +150,11 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         pos_box.set_margin_end(10)
         pos_frame.set_child(pos_box)
 
-        self.position_label = Gtk.Label(label="Simulerar position...")
+        self.position_label = Gtk.Label(label=_("Simulerar position...")
         self.position_label.set_wrap(True)
         pos_box.append(self.position_label)
 
-        self.coords_label = Gtk.Label(label="")
+        self.coords_label = Gtk.Label(label=_("")
         self.coords_label.add_css_class("dim-label")
         self.coords_label.set_selectable(True)
         pos_box.append(self.coords_label)
@@ -173,19 +174,19 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(btn_box)
 
         # Dela position
-        share_btn = Gtk.Button(label="Dela min position")
+        share_btn = Gtk.Button(label=_("Dela min position")
         share_btn.add_css_class("suggested-action")
         share_btn.connect("clicked", self._on_share_position)
         btn_box.append(share_btn)
 
         # Jag är framme
-        self.arrived_btn = Gtk.Button(label="Jag är framme!")
+        self.arrived_btn = Gtk.Button(label=_("Jag är framme!")
         self.arrived_btn.add_css_class("success")
         self.arrived_btn.connect("clicked", self._on_arrived)
         btn_box.append(self.arrived_btn)
 
         # SOS / Avbryt
-        cancel_btn = Gtk.Button(label="Avbryt promenad")
+        cancel_btn = Gtk.Button(label=_("Avbryt promenad")
         cancel_btn.add_css_class("destructive-action")
         cancel_btn.connect("clicked", self._on_cancel_walk)
         btn_box.append(cancel_btn)
@@ -202,11 +203,11 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.set_margin_end(20)
         page.set_vexpand(True)
 
-        title = Gtk.Label(label="Trygga kontakter")
+        title = Gtk.Label(label=_("Trygga kontakter")
         title.add_css_class("title-2")
         page.append(title)
 
-        desc = Gtk.Label(label="Dessa personer kan se din position under promenader.")
+        desc = Gtk.Label(label=_("Dessa personer kan se din position under promenader.")
         desc.set_wrap(True)
         desc.add_css_class("dim-label")
         page.append(desc)
@@ -219,7 +220,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         self._refresh_contacts()
 
         # Lägg till kontakt
-        add_frame = Gtk.Frame(label="Lägg till kontakt")
+        add_frame = Gtk.Frame(label=_("Lägg till kontakt")
         add_frame.set_margin_top(10)
         page.append(add_frame)
 
@@ -231,14 +232,14 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         add_frame.set_child(add_box)
 
         self.name_entry = Gtk.Entry()
-        self.name_entry.set_placeholder_text("Namn")
+        self.name_entry.set_placeholder_text(_("Namn")
         add_box.append(self.name_entry)
 
         self.phone_entry = Gtk.Entry()
-        self.phone_entry.set_placeholder_text("Telefonnummer")
+        self.phone_entry.set_placeholder_text(_("Telefonnummer")
         add_box.append(self.phone_entry)
 
-        add_btn = Gtk.Button(label="Lägg till")
+        add_btn = Gtk.Button(label=_("Lägg till")
         add_btn.add_css_class("suggested-action")
         add_btn.connect("clicked", self._on_add_contact)
         add_box.append(add_btn)
