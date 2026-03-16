@@ -369,7 +369,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         dialog = Adw.AlertDialog()
         dialog.set_heading("Framme!")
         dialog.set_body(
-            f"Du har bekräftat att du är framme.\n"
+            f_("You have confirmed that you have arrived.")
             f"Rutt: {route_name}\n\n"
             f"Meddelande skickas till: {contacts}\n"
             f"\"Jag är framme och trygg!\""
@@ -381,7 +381,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         self.current_route = None
         self.current_step = 0
         self.stack.set_visible_child_name("home")
-        self.status_label.set_label("Senaste promenad avslutad. Välj en ny rutt!")
+        self.status_label.set_label(_("Last walk completed. Choose a new route!"))
 
     def _on_cancel_walk(self, button):
         self.walking = False
@@ -391,7 +391,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         self.current_route = None
         self.current_step = 0
         self.stack.set_visible_child_name("home")
-        self.status_label.set_label("Promenad avbruten. Välj en ny rutt!")
+        self.status_label.set_label(_("Walk interrupted. Choose a new route!"))
 
     def _on_add_contact(self, button):
         name = self.name_entry.get_text().strip()
