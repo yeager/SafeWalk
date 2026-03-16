@@ -1,9 +1,0 @@
-[Desktop Entry]
-Name=SafeWalk
-Comment=Trygg promenad-app med GPS-delning
-Exec=safewalk
-Icon=find-location-symbolic
-Terminal=false
-Type=Application
-Categories=Utility;GNOME;GTK;
-Keywords=walk;safety;gps;promenad;trygg;

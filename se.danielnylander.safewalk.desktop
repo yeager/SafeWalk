@@ -1,0 +1,14 @@
+[Desktop Entry]
+Name=SafeWalk
+Name[sv]=Trygg Promenad
+Comment=Safe walking with GPS sharing
+Comment[sv]=Trygg promenad med GPS-delning
+GenericName=Accessibility Application
+GenericName[sv]=Tillgänglighetsapp
+Exec=python3 -m safewalk
+Icon=safewalk
+Terminal=false
+Type=Application
+Categories=Utility;Accessibility;
+Keywords=accessibility;a11y;
+Keywords[sv]=tillgänglighet;funktionsnedsättning;
