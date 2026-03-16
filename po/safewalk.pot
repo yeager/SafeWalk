@@ -1,21 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the SafeWalk package.
+# This file is distributed under the same license as the safewalk package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #: safewalk/app.py:133 safewalk/app.py:157
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: SafeWalk 1.0\n"
+"Project-Id-Version: safewalk 0.1.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-16 11:51+0100\n"
+"POT-Creation-Date: 2026-03-16 12:47+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
 #: safewalk/app.py:79
@@ -27,7 +27,7 @@ msgid "Kom hem tryggt"
 msgstr ""
 
 #: safewalk/app.py:88
-msgid "Select en rutt för att börja"
+msgid "Select a route to start"
 msgstr ""
 
 #: safewalk/app.py:94
@@ -39,7 +39,7 @@ msgid "Start"
 msgstr ""
 
 #: safewalk/app.py:128
-msgid "Promenad pågår"
+msgid "Walk in progress"
 msgstr ""
 
 #: safewalk/app.py:143
@@ -55,7 +55,7 @@ msgid "Dela min position"
 msgstr ""
 
 #: safewalk/app.py:183
-msgid "Jag är framme!"
+msgid "I have arrived!"
 msgstr ""
 
 #: safewalk/app.py:189

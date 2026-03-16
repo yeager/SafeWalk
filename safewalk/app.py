@@ -85,7 +85,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.append(subtitle)
 
         # Status
-        self.status_label = Gtk.Label(label=_("Select en rutt för att börja")
+        self.status_label = Gtk.Label(label=_("Select a route to start")
         self.status_label.set_wrap(True)
         self.status_label.set_margin_top(10)
         page.append(self.status_label)
@@ -125,7 +125,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         page.set_margin_end(20)
         page.set_vexpand(True)
 
-        walk_title = Gtk.Label(label=_("Promenad pågår")
+        walk_title = Gtk.Label(label=_("Walk in progress")
         walk_title.add_css_class("title-2")
         page.append(walk_title)
 
@@ -180,7 +180,7 @@ class SafeWalkWindow(Adw.ApplicationWindow):
         btn_box.append(share_btn)
 
         # Jag är framme
-        self.arrived_btn = Gtk.Button(label=_("Jag är framme!")
+        self.arrived_btn = Gtk.Button(label=_("I have arrived!")
         self.arrived_btn.add_css_class("success")
         self.arrived_btn.connect("clicked", self._on_arrived)
         btn_box.append(self.arrived_btn)
